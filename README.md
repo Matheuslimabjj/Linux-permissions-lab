@@ -22,16 +22,16 @@ Você é um administrador de sistemas responsável por configurar e proteger o a
 
 ### ✅ 1. Verificar o diretório atual
 
-```bash
+bash
 pwd
 
- 📂2. Criar diretórios para projetos
+### 📂2. Criar diretórios para projetos
 
 mkdir /home/research
 cd /home/research
 mkdir projects drafts archived
 
-📄3. Criar e editar arquivos
+### 📄3. Criar e editar arquivos
 
 cd projects
 touch report.txt 
@@ -39,16 +39,16 @@ data.csv
 .secret_plan.txt 
 nano report.txt
 
-🔍4. Verificar arquivos e permissões
+### 🔍4. Verificar arquivos e permissões
 
 ls -la
 
-🔐5. Atualizar permissões
+### 🔐5. Atualizar permissões
 
 chmod 640 report.txt
 chmod 440 .secret_plan.txt
 
-📘 Explicação:
+### 📘 Explicação:
 Os números 640 e 440 representam permissões em formato octal, definindo quem pode ler, escrever ou executar:
 
 Octal	Permissão	Significado
@@ -73,12 +73,12 @@ Grupo: 4 → somente leitura
 Outros: 0 → nenhum acesso
 
 
-👤6. Gerenciar usuários e grupos
+### 👤6. Gerenciar usuários e grupos
 
 sudo useradd researcher1 -m -G research
 sudo chown researcher1:research report.txt
 
-🧾7. Visualizar e buscar conteúdo
+### 🧾7. Visualizar e buscar conteúdo
 
 cat report.txt
 head report.txt
@@ -87,7 +87,7 @@ less report.txt
 grep "confidencial" report.txt
 cat report.txt | grep "dados"
 
-📦8. Copiar, mover e excluir arquivos
+### 📦8. Copiar, mover e excluir arquivos
 
 cp report.txt ../drafts/
 mv data.csv ../archived/
@@ -95,23 +95,23 @@ touch temp.log
 rm temp.log
 rmdir empty_folder
 
-🔎9. Encontrar arquivos
+### 🔎9. Encontrar arquivos
 
 find /home/research -name "*.txt"
 
-🙋‍♂️10. Identificar usuário e buscar ajuda
+### 🙋‍♂️10. Identificar usuário e buscar ajuda
 
 whoami
 whatis chmod
 man chmod
 apropos permissions
 
-❌11. Remover usuários e grupos
+### ❌11. Remover usuários e grupos
 
 sudo userdel researcher1
 sudo groupdel research
 
-📝 Resumo
+### 📝 Resumo
 Este exercício cobre o uso de mais de 25 comandos essenciais do Linux para:
 
 Segurança (permissões, usuários, grupos)
