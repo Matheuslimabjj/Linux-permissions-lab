@@ -51,7 +51,7 @@ nano report.txt`
 `chmod 640 report.txt
 chmod 440 .secret_plan.txt`
 
----
+
 ### 📘 Explicação:
 Os números 640 e 440 representam permissões em formato octal, definindo quem pode ler, escrever ou executar:
 
@@ -129,6 +129,8 @@ Segurança (permissões, usuários, grupos)
 Manipulação de arquivos
 
 Busca e visualização de conteúdo
+
+---
 
 Automatização com pipes
 
