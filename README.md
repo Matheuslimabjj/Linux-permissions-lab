@@ -21,7 +21,7 @@ Você é um administrador de sistemas responsável por configurar e proteger o a
 ---
 
 ### ✅ 1. Verificar o diretório atual
-
+***
 `pwd`
 
 ### 📂2. Criar diretórios para projetos
