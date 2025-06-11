@@ -22,31 +22,30 @@ Você é um administrador de sistemas responsável por configurar e proteger o a
 
 ### ✅ 1. Verificar o diretório atual
 
-bash
-pwd
+`pwd`
 
 ### 📂2. Criar diretórios para projetos
 
-mkdir /home/research
+`mkdir /home/research
 cd /home/research
-mkdir projects drafts archived
+mkdir projects drafts archived`
 
 ### 📄3. Criar e editar arquivos
 
-cd projects
+`cd projects
 touch report.txt 
 data.csv 
 .secret_plan.txt 
-nano report.txt
+nano report.txt`
 
 ### 🔍4. Verificar arquivos e permissões
 
-ls -la
+`ls -la`
 
 ### 🔐5. Atualizar permissões
 
-chmod 640 report.txt
-chmod 440 .secret_plan.txt
+`chmod 640 report.txt
+chmod 440 .secret_plan.txt`
 
 ### 📘 Explicação:
 Os números 640 e 440 representam permissões em formato octal, definindo quem pode ler, escrever ou executar:
@@ -56,7 +55,7 @@ Octal	Permissão	Significado
 2	w	Escrita
 1	x	Execução
 
-chmod 640 report.txt
+`chmod 640 report.txt`
 
 Dono: 6 (4+2) → leitura e escrita
 
@@ -64,7 +63,7 @@ Grupo: 4 → somente leitura
 
 Outros: 0 → nenhum acesso
 
-chmod 440 .secret_plan.txt
+`chmod 440 .secret_plan.txt`
 
 Dono: 4 → somente leitura
 
@@ -75,41 +74,41 @@ Outros: 0 → nenhum acesso
 
 ### 👤6. Gerenciar usuários e grupos
 
-sudo useradd researcher1 -m -G research
-sudo chown researcher1:research report.txt
+`sudo useradd researcher1 -m -G research
+sudo chown researcher1:research report.txt`
 
 ### 🧾7. Visualizar e buscar conteúdo
 
-cat report.txt
+`cat report.txt
 head report.txt
 tail report.txt
 less report.txt
 grep "confidencial" report.txt
-cat report.txt | grep "dados"
+cat report.txt | grep "dados"`
 
 ### 📦8. Copiar, mover e excluir arquivos
 
-cp report.txt ../drafts/
+`cp report.txt ../drafts/
 mv data.csv ../archived/
 touch temp.log
 rm temp.log
-rmdir empty_folder
+rmdir empty_folder`
 
 ### 🔎9. Encontrar arquivos
 
-find /home/research -name "*.txt"
+`find /home/research -name "*.txt"`
 
 ### 🙋‍♂️10. Identificar usuário e buscar ajuda
 
-whoami
+`whoami
 whatis chmod
 man chmod
-apropos permissions
+apropos permissions`
 
 ### ❌11. Remover usuários e grupos
 
-sudo userdel researcher1
-sudo groupdel research
+`sudo userdel researcher1
+sudo groupdel research`
 
 ### 📝 Resumo
 Este exercício cobre o uso de mais de 25 comandos essenciais do Linux para:
